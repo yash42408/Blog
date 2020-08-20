@@ -19,7 +19,7 @@
  <a href="{% url 'articledetail' post.pk %}">{{post.title}}</a>
  by: {{post.author.first_name}}
  <br/>
- {{post.body}}
+ {{post.body | slice:":200"}}
  <br/>
  {% if user.is_authenticated %}
 
