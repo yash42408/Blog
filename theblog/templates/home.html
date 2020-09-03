@@ -17,7 +17,7 @@
 
 <li class="list-group-item">
  <a href="{% url 'articledetail' post.pk %}">{{post.title}}</a>
- by: {{post.author.first_name}}
+ by: {{post.author}}
  <br/>
  {{post.body | slice:":200"}}
  <br/>
